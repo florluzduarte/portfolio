@@ -1,0 +1,81 @@
+---
+import { Icon } from "astro-icon/components";
+import { t, setDefaultNamespace } from "i18next";
+import { LanguageSelector } from "astro-i18next/components";
+
+setDefaultNamespace("layout");
+---
+
+<nav class="border-b-[0.5px] border-gray-300 bg-gray-600 sticky">
+  <div class="flex justify-between items-center px-6 py-4">
+    <div>
+      <p
+        class="font-bold bg-gradient-to-r from-yellow-200 to-pink-400 inline-block text-transparent bg-clip-text"
+      >
+        {t("navbar.name")}
+      </p>
+      <p>{t("navbar.role")}</p>
+    </div>
+    <button id="menu__bars" class="lg:hidden">
+      <Icon name="bars" size={32} />
+    </button>
+  </div>
+
+  <div id="menu__bg" class="transition ease-in-out duration-100"></div>
+
+  <div
+    id="menu__mobile"
+    class="fixed top-0 h-screen -right-[300px] hidden w-[250px] transition ease-in-out duration-300 z-20 lg:hidden"
+  >
+    <div class="flex flex-col gap-6 px-6 pb-8 pt-[30px] bg-gray-600">
+      <button id="menu__cross" class="self-end">
+        <Icon name="cross" size={24} />
+      </button>
+      <a href="#work">{t("navbar.links.work")}</a>
+      <a href="#projects">{t("navbar.links.projects")}</a>
+      <a href="#community">{t("navbar.links.community")}</a>
+      <a href="#contact">{t("navbar.links.contact")}</a>
+      <LanguageSelector
+        showFlag={true}
+        class="bg-gray-300 p-3 border-[0.5px] border-white rounded-lg"
+      />
+    </div>
+  </div>
+</nav>
+
+<script>
+  const active = ["-translate-x-[300px]", "bg-gray-600"];
+  const activeBg = [
+    "fixed",
+    "top-0",
+    "w-screen",
+    "bg-black",
+    "opacity-70",
+    "h-screen",
+  ];
+  const barsButton = document.getElementById("menu__bars");
+  const crossButton = document.getElementById("menu__cross");
+  const modal = document.getElementById("menu__mobile");
+  const menuBg = document.getElementById("menu__bg");
+
+  barsButton.addEventListener("click", function () {
+    menu__bg.classList.add(...activeBg);
+    modal.classList.remove("hidden");
+    modal.classList.add(...active);
+    console.log("click bars");
+  });
+
+  crossButton.addEventListener("click", function () {
+    modal.classList.remove(...active);
+    modal.classList.add("hidden");
+    menu__bg.classList.remove(...activeBg);
+    console.log("click");
+  });
+
+  menuBg.addEventListener("click", function () {
+    modal.classList.remove(...active);
+    modal.classList.add("hidden");
+    menu__bg.classList.remove(...activeBg);
+    console.log("click");
+  });
+</script>

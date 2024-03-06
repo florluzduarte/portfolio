@@ -1,13 +1,12 @@
 {
   "site": {
     "title": "Portfolio | Flor Luz Duarte",
-    "description": "Florencia Luz Duarte, es una Desarrolladora Front-end y Diseñadora de productos radicada en Buenos Aires, Argentina."
+    "description": "Florencia Luz Duarte es una Desarrolladora Front-end y Diseñadora de productos radicada en Buenos Aires, Argentina."
   },
   "navbar": {
     "name": "Flor Luz Duarte",
     "role": "Developer + Designer",
     "links": {
-      "home": "Inicio",
       "work": "Experiencia",
       "projects": "Proyectos",
       "community": "Comunidad",

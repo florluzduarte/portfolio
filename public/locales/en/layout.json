@@ -1,13 +1,12 @@
 {
   "site": {
     "title": "Portfolio | Flor Luz Duarte",
-    "description": "Florencia Luz Duarte, is a Front-end Developer and Product Designer based in Buenos Aires, Argentina."
+    "description": "Florencia Luz Duarte is a Front-end Developer and Product Designer based in Buenos Aires, Argentina."
   },
   "navbar": {
     "name": "Flor Luz Duarte",
     "role": "Developer + Designer",
     "links": {
-      "home": "Home",
       "work": "Work",
       "projects": "Projects",
       "community": "Community",
