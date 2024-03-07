@@ -1,0 +1,22 @@
+---
+import Button from "./Button.astro";
+import ContactButton from "./ContactButton.astro";
+
+const buttonGithub = {
+  iconName: "github",
+  iconSize: 24,
+  path: "https://github.com/florluzduarte",
+};
+
+const buttonLinkedin = {
+  iconName: "linkedin",
+  iconSize: 24,
+  path: "https://linkedin.com/in/florluzduarte",
+};
+---
+
+<div class="flex gap-3 my-8">
+  <Button {...buttonLinkedin} iconPosition="left" type="link" />
+  <Button {...buttonGithub} iconPosition="left" type="link" />
+  <ContactButton />
+</div>

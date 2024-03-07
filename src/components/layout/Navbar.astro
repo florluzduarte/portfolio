@@ -36,7 +36,7 @@ setDefaultNamespace("layout");
       </ul>
       <LanguageSelector
         showFlag={true}
-        class="bg-gray-300 p-3 border-[0.5px] border-white rounded-lg cursor-pointer"
+        class="bg-gray-300 p-3 border-[0.5px] border-white rounded-lg cursor-pointer hover:bg-gray-800"
       />
     </div>
 
@@ -71,7 +71,7 @@ setDefaultNamespace("layout");
       </ul>
       <LanguageSelector
         showFlag={true}
-        class="bg-gray-300 p-3 border-[0.5px] border-white rounded-lg cursor-pointer"
+        class="bg-gray-300 p-3 border-[0.5px] border-white rounded-lg cursor-pointer hover:bg-gray-800"
       />
     </div>
   </div>
@@ -96,7 +96,6 @@ setDefaultNamespace("layout");
     menuBg?.classList.add(...activeBg);
     modal?.classList.remove("hidden");
     modal?.classList.add(...active);
-    console.log("click bars");
   });
 
   crossButton?.addEventListener("click", function () {

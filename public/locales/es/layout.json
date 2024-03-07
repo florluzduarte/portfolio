@@ -17,5 +17,6 @@
     "credits-1": "2024 - Hecho con ",
     "credits-2": " y ",
     "credits-3": " Astro"
-  }
+  },
+  "emailToast": "Email copiado en el portapapeles"
 }

@@ -17,5 +17,6 @@
     "credits-1": "2024 - Made with ",
     "credits-2": " and ",
     "credits-3": " Astro"
-  }
+  },
+  "emailToast": "Email copied to clipboard"
 }

@@ -1,0 +1,43 @@
+---
+import { t, setDefaultNamespace } from "i18next";
+import { Icon } from "astro-icon/components";
+
+setDefaultNamespace("layout");
+---
+
+<button
+  class="flex gap-2 p-2 border-[0.5px] border-gray-300 bg-gray-400 rounded-lg w-full justify-center hover:bg-gray-800"
+  id="btn__copy"
+>
+  <span class="font-bold" id="email__to__copy">flor@unicornio.dev</span>
+  <Icon name="copy" size={24} />
+</button>
+
+<div
+  class="fixed -bottom-[200px] right-4 left-4 bg-pink-400 p-2 rounded-lg transition z-10 md:w-[400px]"
+  id="my__toast"
+>
+  <div class="flex gap-2 items-center justify-center">
+    <div class="text-black">{t("emailToast")}</div>
+  </div>
+</div>
+
+<script>
+  let text = document.getElementById("email__to__copy").innerHTML;
+  const button = document.getElementById("btn__copy");
+  const toast = document.getElementById("my__toast");
+
+  const active = ["-translate-y-[220px]"];
+  const copyContent = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      toast.classList.add(...active);
+      setTimeout(() => {
+        toast.classList.remove(...active);
+      }, 1500);
+    } catch (err) {
+      console.error("Failed to copy: ", err);
+    }
+  };
+  button.addEventListener("click", () => copyContent());
+</script>
