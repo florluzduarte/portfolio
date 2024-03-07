@@ -1,18 +1,18 @@
 ---
 import { changeLanguage, t, setDefaultNamespace } from "i18next";
 import Layout from "../layouts/Layout.astro";
+import Hero from "../components/home/hero/Hero.astro";
 
 changeLanguage("es");
-setDefaultNamespace("layout");
+
+setDefaultNamespace("home");
 ---
 
-<Layout title={t("site.title")} description={t("site.description")}>
-	<main class="min-h-screen">
-		<!-- <h1
-			class="font-bold text-2xl bg-gradient-to-r from-yellow-200 to-pink-400 inline-block text-transparent bg-clip-text"
-		>
-			Portfolio
-		</h1> -->
-		<h1>Portfolio</h1>
+<Layout
+	title={t("layout:site.title")}
+	description={t("layout:site.description")}
+>
+	<main class="min-h-screen flex flex-col mx-6 gap-6 lg:max-w-6xl lg:mx-auto">
+		<Hero />
 	</main>
 </Layout>

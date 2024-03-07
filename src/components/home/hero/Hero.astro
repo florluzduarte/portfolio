@@ -1,0 +1,36 @@
+---
+import { t, setDefaultNamespace } from "i18next";
+import { Trans } from "astro-i18next/components";
+import Title from "../../../components/ui/Title.astro";
+import Image from "astro/components/Image.astro";
+import profileImg from "../../../assets/home/perfil.png";
+
+setDefaultNamespace("home");
+---
+
+<section class="my-14 lg:my-24">
+  <div
+    class="grid grid-cols-1 gap-10 justify-center md:grid-cols-2 md:max-w-2xl md:mx-auto lg:max-w-4xl lg:grid-cols-3 xl:max-w-5xl"
+  >
+    <div class="md:self-end lg:col-span-2 xl:max-w-2xl">
+      <Title
+        plainText={t("title.plainText")}
+        colorText={t("title.colorText")}
+      />
+    </div>
+    <Image
+      src={profileImg}
+      alt={t("photo.alt")}
+      class="w-[235px] h-auto mx-auto md:grid-row-subgrid md:row-span-2 md:w-auto"
+    />
+    <div class="lg:col-span-2 lg:max-w-sm xl:max-w-[460px]">
+      <p>
+        <Trans i18nKey="bio">
+          ¡Hola! Mi nombre es <span class="font-bold">Florencia Luz Duarte</span
+          >. Soy Desarrolladora web Front-end y Diseñadora de productos radicada
+          en Buenos Aires, Argentina.
+        </Trans>
+      </p>
+    </div>
+  </div>
+</section>
