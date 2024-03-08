@@ -1,12 +1,28 @@
 ---
-import { Icon } from "astro-icon/components";
+import { t, setDefaultNamespace } from "i18next";
+
+setDefaultNamespace("layout");
 ---
 
 <div
-  class="fixed -bottom-[200px] right-4 left-4 bg-gray-400 p-2 rounded-lg transition"
+  class="fixed -bottom-[200px] right-4 left-4 bg-pink-400 p-2 rounded-lg transition text-center md:max-w-[300px]"
+  id="my__toast"
 >
-  <div class="flex gap-2 items-center justify-center">
-    <div>Email copiado en el clipboard</div>
-    <Icon name="copy" size={24} />
+  <div>
+    <div class="text-black">{t("emailToast")}</div>
   </div>
 </div>
+
+<script>
+  import { isToastOpen } from "../../../store.js";
+  const active = ["-translate-y-[220px]"];
+  const toast = document.getElementById("my__toast");
+  // Listen to changes in the store, and show/hide the toast accordingly
+  isToastOpen.subscribe((open: boolean) => {
+    if (open) {
+      toast?.classList.add(...active);
+    } else {
+      toast?.classList.remove(...active);
+    }
+  });
+</script>
