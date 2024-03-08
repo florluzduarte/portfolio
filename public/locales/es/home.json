@@ -6,5 +6,13 @@
   "photo": {
     "alt": "Foto de perfil de Flor Luz Duarte"
   },
-  "bio": "¡Hola! Mi nombre es <0>Florencia Luz Duarte</0>. Soy Desarrolladora web Front-end y Diseñadora de productos radicada en Buenos Aires, Argentina."
+  "bio": "¡Hola! Mi nombre es <0>Florencia Luz Duarte</0>. Soy Desarrolladora web Front-end y Diseñadora de productos radicada en Buenos Aires, Argentina.",
+  "myStory": {
+    "title": "Sobre mi",
+    "texts": {
+      "text1": "Luego de trabajar por +10 años como Diseñadora, <0>decidí darle una oportunidad al código, y terminó robándose mi corazón a nivel profesional</0>.",
+      "text2": "Desde entonces, <0>estoy en un proceso de cambio de carrera</0>, que me ha llevado a aprender de forma autodidacta lo necesario para convertime en Desarrolladora Web Frontend.",
+      "text3": "Actualmente, <0>mi meta es actuar como un puente entre los mundos del Diseño y el Desarrollo</0>, aprovechando ambos aspectos de mi camino profesional."
+    }
+  }
 }

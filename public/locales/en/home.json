@@ -6,5 +6,13 @@
   "photo": {
     "alt": "Flor Luz Duarte profile picture"
   },
-  "bio": "Hello! My name is <0>Florencia Luz Duarte</0>. I am a Front-end Developer and Product Designer based in Buenos Aires, Argentina."
+  "bio": "Hello! My name is <0>Florencia Luz Duarte</0>. I am a Front-end Developer and Product Designer based in Buenos Aires, Argentina.",
+  "myStory": {
+    "title": "My Story",
+    "texts": {
+      "text1": "After working for 10+ years as a Designer, <0>I decided to give coding a chance, and it ended up stealing my heart</0>.",
+      "text2": "Since then, <0>I have been in the process of career change</0>, which has led me to self-learn the necessary skills to become a Front-end Developer.",
+      "text3": "Currently, <0>my mission is to act as a bridge between the worlds of Programming and Design</0>, leveraging both aspects of my professional journey."
+    }
+  }
 }

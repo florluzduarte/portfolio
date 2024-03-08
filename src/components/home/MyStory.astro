@@ -1,0 +1,37 @@
+---
+import { t, setDefaultNamespace } from "i18next";
+import { Trans } from "astro-i18next/components";
+import Subtitle from "../ui/Subtitle.astro";
+
+setDefaultNamespace("home");
+---
+
+<div class="mb-14 lg:mb-24">
+  <Subtitle title={t("myStory.title")} />
+  <div class="flex flex-col gap-6 mt-6">
+    <p>
+      <Trans i18nKey="myStory.texts.text1">
+        Luego de trabajar por +10 años como Diseñadora, <span class="font-bold"
+          >decidí darle una oportunidad al código, y terminó robándose mi
+          corazón a nivel profesional</span
+        >.
+      </Trans>
+    </p>
+    <p>
+      <Trans i18nKey="myStory.texts.text2">
+        Desde entonces, <span class="font-bold"
+          >estoy en un proceso de cambio de carrera</span
+        >, que me ha llevado a aprender de forma autodidacta lo necesario para
+        convertime en Desarrolladora Web Frontend.
+      </Trans>
+    </p>
+    <p>
+      <Trans i18nKey="myStory.texts.text3">
+        Actualmente, <span class="font-bold"
+          >mi meta es actuar como un puente entre los mundos del Diseño y el
+          Desarrollo</span
+        >, aprovechando ambos aspectos de mi camino profesional.
+      </Trans>
+    </p>
+  </div>
+</div>
