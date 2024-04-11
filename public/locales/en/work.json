@@ -1,0 +1,117 @@
+{
+  "work": {
+    "raddix": {
+      "title": "Frontend Web Developer",
+      "company": "RADDIX.TECH (Freelance)",
+      "link": "https://raddix.tech",
+      "date": "(January 2023 - To Date)",
+      "experience": {
+        "description": "raddix.tech is a web development and design studio focused on working with clients and other technology companies.",
+        "stack": "Tech Stack: React, Next.js, Astro.js, PostgreSQL, Tailwind CSS, TypeScript, JavaScript, HTML, CSS vanilla, Git and GitHub.",
+        "list": [
+          {
+            "order": 1,
+            "text": "Develop web/app projects for multiple clients."
+          },
+          {
+            "order": 2,
+            "text": "Program and Design +6 web/apps from scratch to launch."
+          },
+          {
+            "order": 3,
+            "text": "Advise clients on web development topics according to their business needs."
+          },
+          {
+            "order": 4,
+            "text": "Select technical tools adjusted to the project and budget."
+          },
+          {
+            "order": 5,
+            "text": "Maintain, document, and update the code of the developed features."
+          }
+        ]
+      }
+    },
+    "unicornio": {
+      "title": "Tech Content Creator",
+      "company": "UNICORNIO.DEV (Independent)",
+      "link": "https://unicornio.dev",
+      "date": "(December 2022 - To Date)",
+      "experience": {
+        "description": "unicornio.dev is a personal project aimed at providing support and valuable content to people who are learning to program.",
+        "list": [
+          {
+            "order": 1,
+            "text": "Create technical content and open source projects on several platforms."
+          },
+          {
+            "order": 2,
+            "text": "Implement and maintain 5 active social networks."
+          },
+          {
+            "order": 3,
+            "text": "Reach +10K followers with the produced content."
+          },
+          {
+            "order": 4,
+            "text": "Develop, design, and improve the project’s own web platform."
+          },
+          {
+            "order": 5,
+            "text": "Collaborate with other LATAM tech communities, such as La Comu Dev and Mermelada Tech."
+          }
+        ]
+      }
+    },
+    "apx": {
+      "title": "Product Manager / UX Designer",
+      "company": "APX.SCHOOL (Full-Time)",
+      "link": "https://apx.school",
+      "date": "(May 2021 - December 2022)",
+      "experience": {
+        "description": "apx.school is an online programming academy focused on teaching fullstack web development in an asynchronous and self-managed way.",
+        "list": [
+          {
+            "order": 1,
+            "text": "Lead 2 product squads (8 people) that combined the areas of Programming, UX Design, and Content Development."
+          },
+          {
+            "order": 2,
+            "text": "Launch 2 complete products + the creation of multiple features for the student platform."
+          },
+          {
+            "order": 3,
+            "text": "Guide team members to work within the framework of agile methodologies (Scrum), acting the role of Product Owner."
+          },
+          {
+            "order": 4,
+            "text": "Design and advice on topics of user experience design, user research, and interface development (UI Design)."
+          }
+        ]
+      }
+    },
+    "metodo": {
+      "title": "UX Research University Teacher",
+      "company": "FADU-UBA (Part-Time)",
+      "link": "https://metodo-uba.vercel.app",
+      "date": "(April 2021 - November 2022)",
+      "experience": {
+        "description": "Teacher at University of Buenos Aires (Faculty of Architecture, Design and Urbanism), where I helped hundreds of students in the Industrial Design Career to learn research methodologies oriented to product development. During the course, students acquire skills in:",
+        "list": [
+          {
+            "order": 1,
+            "text": "Learning Design Thinking to solve complex problems."
+          },
+          {
+            "order": 2,
+            "text": "Knowing the methodologies and processes of UX Research."
+          },
+          {
+            "order": 3,
+            "text": "Developing critical thinking and preparation of research reports."
+          }
+        ]
+      }
+    }
+  }
+}

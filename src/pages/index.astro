@@ -3,6 +3,7 @@ import { changeLanguage, t, setDefaultNamespace } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/home/Hero.astro";
 import MyStory from "../components/home/MyStory.astro";
+import AboutSection from "../components/home/AboutSection.astro";
 
 changeLanguage("es");
 
@@ -15,6 +16,6 @@ setDefaultNamespace("home");
 >
 	<main class="min-h-screen flex flex-col mx-6 lg:max-w-6xl lg:mx-auto">
 		<Hero />
-		<MyStory />
+		<AboutSection />
 	</main>
 </Layout>
