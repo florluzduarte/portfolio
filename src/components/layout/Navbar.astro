@@ -55,16 +55,20 @@ setDefaultNamespace("layout");
       </button>
       <ul class="flex flex-col gap-6">
         <li>
-          <a href="#work">{t("navbar.links.work")}</a>
+          <a href="#work" class="link-button">{t("navbar.links.work")}</a>
         </li>
         <li>
-          <a href="#projects">{t("navbar.links.projects")}</a>
+          <a href="#projects" class="link-button"
+            >{t("navbar.links.projects")}</a
+          >
         </li>
         <li>
-          <a href="#community">{t("navbar.links.community")}</a>
+          <a href="#community" class="link-button"
+            >{t("navbar.links.community")}</a
+          >
         </li>
         <li>
-          <a href="#contact">{t("navbar.links.contact")}</a>
+          <a href="#contact" class="link-button">{t("navbar.links.contact")}</a>
         </li>
       </ul>
       <LanguageSelector
@@ -89,6 +93,7 @@ setDefaultNamespace("layout");
   const crossButton = document.getElementById("menu__cross");
   const modal = document.getElementById("menu__mobile");
   const menuBg = document.getElementById("menu__bg");
+  const linkButtons = document.querySelectorAll(".link-button");
 
   barsButton?.addEventListener("click", function () {
     menuBg?.classList.add(...activeBg);
@@ -106,5 +111,13 @@ setDefaultNamespace("layout");
     modal?.classList.remove(...active);
     modal?.classList.add("hidden");
     menuBg.classList.remove(...activeBg);
+  });
+
+  linkButtons?.forEach((link) => {
+    link.addEventListener("click", function () {
+      modal?.classList.remove(...active);
+      modal?.classList.add("hidden");
+      menuBg?.classList.remove(...activeBg);
+    });
   });
 </script>
