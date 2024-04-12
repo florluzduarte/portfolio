@@ -1,9 +1,8 @@
 ---
 import { t, setDefaultNamespace } from "i18next";
-import { Trans } from "astro-i18next/components";
 import Title from "../ui/Title.astro";
 import Image from "astro/components/Image.astro";
-import profileImg from "../../assets/home/perfil.png";
+import profileImg from "../../assets/home/foto-perfil-byn-pink.png";
 import ContactPill from "../ui/ContactPill.astro";
 
 setDefaultNamespace("home");
@@ -26,11 +25,7 @@ setDefaultNamespace("home");
     />
     <div class="lg:col-span-2 lg:max-w-sm xl:max-w-[450px]">
       <p>
-        <Trans i18nKey="bio">
-          ¡Hola! Mi nombre es <span class="font-bold">Florencia Luz Duarte</span
-          >. Soy Desarrolladora web Front-end y Diseñadora de productos radicada
-          en Buenos Aires, Argentina.
-        </Trans>
+        {t("bio")}
       </p>
       <ContactPill />
     </div>
