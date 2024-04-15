@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import { t, setDefaultNamespace } from "i18next";
+import { localizePath } from "astro-i18next";
 import { LanguageSelector } from "astro-i18next/components";
 
 setDefaultNamespace("layout");
@@ -10,12 +11,12 @@ setDefaultNamespace("layout");
   <div
     class="flex justify-between items-center px-6 py-4 lg:max-w-7xl lg:mx-auto"
   >
-    <div>
+    <a href={localizePath("/")}>
       <p class="font-bold text-pink-400">
         {t("navbar.name")}
       </p>
       <p>{t("navbar.role")}</p>
-    </div>
+    </a>
 
     <div class="hidden lg:flex lg:gap-10 items-center">
       <ul class="lg:flex lg:gap-10">
