@@ -1,0 +1,19 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  title: string;
+  path: string;
+}
+
+const { title, path } = Astro.props;
+---
+
+<a
+  href={path}
+  class="flex gap-2 p-4 border-[0.5px] border-gray-300 bg-gray-400 rounded-lg hover:bg-gray-800 justify-start items-end h-full"
+  target="_blank"
+>
+  <span class="font-bold">{title}</span>
+  <Icon name="open-arrow" size={24} />
+</a>

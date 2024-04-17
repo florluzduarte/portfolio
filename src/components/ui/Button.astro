@@ -17,7 +17,7 @@ const { title, iconName, iconSize, iconPosition, type, path } = Astro.props;
   type === "link" && (
     <a
       href={path}
-      class="flex gap-2 p-2 border-[0.5px] border-gray-300 bg-gray-400 rounded-lg hover:bg-gray-800 justify-center"
+      class="flex gap-2 p-2 border-[0.5px] border-gray-300 bg-gray-400 rounded-lg hover:bg-gray-800 justify-center items-center h-full"
       target="_blank"
     >
       {iconPosition === "left" && <Icon name={iconName} size={iconSize} />}
