@@ -1,0 +1,36 @@
+---
+import { setDefaultNamespace } from "i18next";
+import { Icon } from "astro-icon/components";
+
+setDefaultNamespace("layout");
+---
+
+<button
+  class="flex gap-2 p-2 border-[0.5px] border-gray-300 bg-gray-400 rounded-lg w-full justify-center hover:bg-gray-800 btn__copy"
+>
+  <span class="font-bold" id="email__to__copy">flor@unicornio.dev</span>
+  <Icon name="copy" size={24} />
+</button>
+
+<script>
+  import { isToastOpen } from "../../../store.js";
+  const text = "flor@unicornio.dev";
+  const buttons = Array.from(
+    document.getElementsByClassName("btn__copy") || [],
+  );
+  const copyContent = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      isToastOpen.set(true);
+      console.log("isOpen");
+      setTimeout(() => {
+        isToastOpen.set(false);
+      }, 1500);
+    } catch (err) {
+      console.error("Failed to copy: ", err);
+    }
+  };
+  buttons?.forEach((button) => {
+    button.addEventListener("click", () => copyContent());
+  });
+</script>

@@ -1,0 +1,12 @@
+---
+import { t, setDefaultNamespace, changeLanguage } from "i18next";
+import Layout from "../../../layouts/Layout.astro";
+
+changeLanguage("en");
+
+setDefaultNamespace("lamparina");
+---
+
+<Layout title={t("site.title")} description={t("layout:site.description")}>
+  <div></div>
+</Layout>

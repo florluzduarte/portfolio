@@ -1,0 +1,41 @@
+---
+import { t, setDefaultNamespace } from "i18next";
+import Subtitle from "../ui/Subtitle.astro";
+import ProjectCard from "./ProjectCard.astro";
+
+setDefaultNamespace("home");
+
+const projectsCards = [
+  {
+    imagePath: "/src/assets/home/lamparina-card-photo.png",
+    altText: "Lamparina project",
+    title: "lamparina.ar",
+    redirectPath: "/portfolio/lamparina",
+  },
+  {
+    imagePath: "/src/assets/home/redlada-card-photo.png",
+    altText: "Red Latinoamericana de diseño y alimentos project",
+    title: "lafooddesign.org",
+    redirectPath: "/portfolio/redlada",
+  },
+  {
+    imagePath: "/src/assets/home/metodo-card-photo.png",
+    altText: "Metodología del diseño project",
+    title: "metodo-uba.com.ar",
+    redirectPath: "/portfolio/metodo",
+  },
+  {
+    imagePath: "/src/assets/home/ceprodide-card-photo.png",
+    altText: "Ceprodide project",
+    title: "ceprodide.fadu.uba.ar",
+    redirectPath: "/portfolio/ceprodide",
+  },
+];
+---
+
+<div class="mb-14 lg:mb-24">
+  <Subtitle title={t("projects.title")} />
+  <div class="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
+    {projectsCards.map((card) => <ProjectCard {...card} />)}
+  </div>
+</div>

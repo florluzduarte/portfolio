@@ -1,0 +1,24 @@
+---
+import { t, setDefaultNamespace } from "i18next";
+import Subtitle from "../ui/Subtitle.astro";
+import Bullet from "../ui/Bullet.astro";
+
+setDefaultNamespace("home");
+const bulletsSupport = [1, 2, 3, 4, 5, 6];
+---
+
+<div class="mb-14 lg:mb-24">
+  <Subtitle title={t("myStory.title")} />
+  <div class="flex flex-col gap-6 mt-6">
+    <p>{t("myStory.texts.text1")}</p>
+    <p>{t("myStory.texts.text2")}</p>
+    <p>{t("myStory.texts.text3")}</p>
+    <ul class="flex flex-col gap-2">
+      {
+        bulletsSupport.map((item) => (
+          <Bullet order={item}>{t(`myStory.list.text${item}`)}</Bullet>
+        ))
+      }
+    </ul>
+  </div>
+</div>
