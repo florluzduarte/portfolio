@@ -1,0 +1,105 @@
+---
+import { Image } from "astro:assets";
+import { t, setDefaultNamespace } from "i18next";
+
+import unicornioImg from "../../assets/home/unicornio.png";
+import Button from "../ui/Button.astro";
+import WebLinkRedirect from "../ui/WebLinkRedirect.astro";
+
+setDefaultNamespace("home");
+
+const socialMediaLinks = [
+  {
+    title: "LinkedIn",
+    iconName: "linkedin",
+    iconSize: 24,
+    path: "https://linkedin.com/company/unicorniodev",
+  },
+  {
+    title: "YouTube",
+    iconName: "youtube",
+    iconSize: 24,
+    path: "https://youtube.com/@unicorniodev",
+  },
+  {
+    title: "Twitch",
+    iconName: "twitch",
+    iconSize: 24,
+    path: "https://twitch.tv/unicorniodev",
+  },
+  {
+    title: "Instagram",
+    iconName: "instagram",
+    iconSize: 24,
+    path: "https://instagram.com/unicornio.dev",
+  },
+  {
+    title: "Threads",
+    iconName: "threads",
+    iconSize: 24,
+    path: "https://threads.net/unicornio.dev",
+  },
+  {
+    title: "X - Twitter",
+    iconName: "twitter",
+    iconSize: 24,
+    path: "https://x.com/florluzduarte",
+  },
+];
+
+const discordButton = {
+  title: "Discord server",
+  iconName: "discord",
+  iconSize: 24,
+  path: "https://discord.gg/92pFJKeu5d",
+};
+
+const webLinks = [
+  {
+    title: "Website",
+    path: "https://unicornio.dev",
+  },
+  {
+    title: "Open Source",
+    path: "https://github.com/unicorniodev",
+  },
+  {
+    title: "Blog",
+    path: "https://unicornio.dev/",
+  },
+];
+---
+
+<div class="mt-6 mb-14 lg:mb-24 gap-3 lg:gap-4 grid grid-cols-1 lg:grid-cols-2">
+  <div class="flex flex-col gap-3 lg:gap-4">
+    <p class="p-4 md:p-6 border-[0.5px] border-gray-300 bg-gray-400 rounded-lg">
+      {t("unicornio.description")}
+    </p>
+    <div
+      class="flex justify-center items-center border-[0.5px] border-gray-300 bg-gray-400 rounded-lg"
+    >
+      <Image
+        src={unicornioImg}
+        alt="Logo de la comunidad de unicornio dev"
+        class="p-4"
+      />
+    </div>
+  </div>
+  <div class="flex flex-col gap-3 lg:gap-4">
+    <div class="grid grid-cols-2 gap-3 lg:gap-4 h-full">
+      <div class="flex flex-col gap-3 lg:gap-4 h-full">
+        {webLinks.map((link) => <WebLinkRedirect {...link} />)}
+      </div>
+      <div class="flex flex-col gap-3 lg:gap-4 h-full">
+        {
+          socialMediaLinks.map((link) => (
+            <Button {...link} type="link" iconPosition="left" />
+          ))
+        }
+      </div>
+    </div>
+    <div class="md:h-[75px] lg:h-[60px]">
+      <Button {...discordButton} type="link" iconPosition="left" />
+    </div>
+  </div>
+</div>

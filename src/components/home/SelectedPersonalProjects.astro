@@ -1,0 +1,29 @@
+---
+import { t, setDefaultNamespace } from "i18next";
+import Subtitle from "../ui/Subtitle.astro";
+import ProjectCard from "./ProjectCard.astro";
+
+setDefaultNamespace("home");
+
+const selectedProjectsCards = [
+  {
+    imagePath: "/src/assets/home/tesloshop-card-photo.png",
+    altText: "Teslo Shop E-Commerce clone",
+    title: "TesloShop E-Commerce Clone",
+    redirectPath: "/portfolio/teslo",
+  },
+  {
+    imagePath: "/src/assets/home/unicorniodark-card-photo.png",
+    altText: "Unicornio Dark VSCode Theme",
+    title: "Unicornio Dark Theme",
+    redirectPath: "/portfolio/unicorniodark",
+  },
+];
+---
+
+<div class="mb-14 lg:mb-24">
+  <Subtitle title={t("personalProjects.title")} />
+  <div class="mt-6 grid grid-cols-1 gap-10">
+    {selectedProjectsCards.map((card) => <ProjectCard {...card} />)}
+  </div>
+</div>

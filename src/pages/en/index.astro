@@ -1,0 +1,26 @@
+---
+import { changeLanguage, t, setDefaultNamespace } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/home/Hero.astro";
+import AboutSection from "../../components/home/AboutSection.astro";
+import ProjectsSection from "../../components/home/ProjectsSection.astro";
+import CommunitySection from "../../components/home/CommunitySection.astro";
+import ContactSection from "../../components/home/ContactSection.astro";
+
+changeLanguage("en");
+
+setDefaultNamespace("home");
+---
+
+<Layout
+	title={t("layout:site.title")}
+	description={t("layout:site.description")}
+>
+	<main class="min-h-screen flex flex-col mx-6 lg:max-w-6xl lg:mx-auto">
+		<Hero />
+		<AboutSection />
+		<ProjectsSection />
+		<CommunitySection />
+		<ContactSection />
+	</main>
+</Layout>

@@ -1,0 +1,198 @@
+---
+import { t, setDefaultNamespace } from "i18next";
+import Subtitle from "../ui/Subtitle.astro";
+import Bullet from "../ui/Bullet.astro";
+import Button from "../ui/Button.astro";
+
+setDefaultNamespace("work");
+const raddixList = [1, 2, 3, 4, 5];
+const unicornioList = [1, 2, 3, 4, 5];
+const apxList = [1, 2, 3, 4];
+const metodoList = [1, 2, 3];
+
+const downloadButton = {
+  title: "CV | Resume",
+  iconName: "download",
+  iconSize: 24,
+  path: "https://drive.google.com/file/d/15BkUlzLaHey2yMSFk-VWOKiFtTelRHod/view?usp=sharing",
+};
+---
+
+<div class="mb-14 lg:mb-24">
+  <Subtitle title={t("work.title")} />
+  <div class="space-y-4 mt-6">
+    <!-- Raddix Tech -->
+    <details class="group [&_summary::-webkit-details-marker]:hidden">
+      <summary
+        class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg border-[0.5px] border-gray-300 bg-gray-400 p-4 hover:bg-gray-800"
+      >
+        <div>
+          <h2 class="font-bold text-lg text-pink-400">
+            {t("work.raddix.title")}
+          </h2>
+          <p class="text-sm">{t("work.raddix.company")}</p>
+          <p class="text-sm">{t("work.raddix.date")}</p>
+        </div>
+        <svg
+          class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </summary>
+
+      <div class="mt-4 px-4 leading-relaxed">
+        <div class="flex flex-col gap-4">
+          <p>{t("work.raddix.experience.description")}</p>
+          <ul class="flex flex-col gap-2">
+            {
+              raddixList.map((item) => (
+                <Bullet order={item}>
+                  {t(`work.raddix.experience.list.text${item}`)}
+                </Bullet>
+              ))
+            }
+          </ul>
+          <p>{t("work.raddix.experience.stack")}</p>
+        </div>
+      </div>
+    </details>
+
+    <!-- Unicornio dev -->
+    <details class="group [&_summary::-webkit-details-marker]:hidden">
+      <summary
+        class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg border-[0.5px] border-gray-300 bg-gray-400 p-4 hover:bg-gray-800"
+      >
+        <div>
+          <h2 class="font-bold text-lg text-pink-400">
+            {t("work.unicornio.title")}
+          </h2>
+          <p class="text-sm">{t("work.unicornio.company")}</p>
+          <p class="text-sm">{t("work.unicornio.date")}</p>
+        </div>
+        <svg
+          class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </summary>
+
+      <div class="mt-4 px-4 leading-relaxed">
+        <div class="flex flex-col gap-4">
+          <p>{t("work.unicornio.experience.description")}</p>
+          <ul class="flex flex-col gap-2">
+            {
+              unicornioList.map((item) => (
+                <Bullet order={item}>
+                  {t(`work.unicornio.experience.list.text${item}`)}
+                </Bullet>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <!-- Apx School -->
+    <details class="group [&_summary::-webkit-details-marker]:hidden">
+      <summary
+        class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg border-[0.5px] border-gray-300 bg-gray-400 p-4 hover:bg-gray-800"
+      >
+        <div>
+          <h2 class="font-bold text-lg text-pink-400">
+            {t("work.apx.title")}
+          </h2>
+          <p class="text-sm">{t("work.apx.company")}</p>
+          <p class="text-sm">{t("work.apx.date")}</p>
+        </div>
+        <svg
+          class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </summary>
+
+      <div class="mt-4 px-4 leading-relaxed">
+        <div class="flex flex-col gap-4">
+          <p>{t("work.apx.experience.description")}</p>
+          <ul class="flex flex-col gap-2">
+            {
+              apxList.map((item) => (
+                <Bullet order={item}>
+                  {t(`work.apx.experience.list.text${item}`)}
+                </Bullet>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <!-- Metodologia UBA -->
+    <details class="group [&_summary::-webkit-details-marker]:hidden">
+      <summary
+        class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg border-[0.5px] border-gray-300 bg-gray-400 p-4 hover:bg-gray-800"
+      >
+        <div>
+          <h2 class="font-bold text-lg text-pink-400">
+            {t("work.metodo.title")}
+          </h2>
+          <p class="text-sm">{t("work.metodo.company")}</p>
+          <p class="text-sm">{t("work.metodo.date")}</p>
+        </div>
+        <svg
+          class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </summary>
+
+      <div class="mt-4 px-4 leading-relaxed">
+        <div class="flex flex-col gap-4">
+          <p>{t("work.metodo.experience.description")}</p>
+          <ul class="flex flex-col gap-2">
+            {
+              metodoList.map((item) => (
+                <Bullet order={item}>
+                  {t(`work.metodo.experience.list.text${item}`)}
+                </Bullet>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </details>
+    <Button {...downloadButton} type="link" iconPosition="right" />
+  </div>
+</div>

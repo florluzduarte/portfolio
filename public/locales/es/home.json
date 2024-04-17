@@ -1,0 +1,41 @@
+{
+  "title": {
+    "plainText": "Ayudo a empresas a crear productos con ",
+    "colorText": "Código y Diseño"
+  },
+  "photo": {
+    "alt": "Foto de perfil de Flor Luz Duarte"
+  },
+  "bio": "¡Hola! Mi nombre es Florencia Luz Duarte. Soy Desarrolladora web Front-end y Diseñadora de productos ubicada en Buenos Aires, Argentina.",
+  "myStory": {
+    "title": "Sobre mi",
+    "texts": {
+      "text1": "Tras 10 años trabajando como Diseñadora, decidí darle una oportunidad a la programación y terminó robándome el corazón (profesionalmente hablando).",
+      "text2": "Lo que empezó con unas pocas líneas de código, terminó escalando a un cambio de rumbo profesional, que me ha llevado a aprender programación web de forma autodidacta por los últimos 2 años.",
+      "text3": "En este proceso de transformación profesional he logrado:",
+      "text4": "Mi misión es actuar como un puente entre los mundos de la Programación y el Diseño, aprovechando al máximo ambas facetas de mi camino profesional para el desarrollo de webs y apps."
+    },
+    "list": {
+      "text1": "Desarrollar múltiples webs / apps para clientes diversos.",
+      "text2": "Construir una comunidad abierta para programadores llamada Unicornio Dev.",
+      "text3": "Crear contenido técnico y proyectos open source en múltiples plataformas.",
+      "text4": "Colaborar activamente con otras comunidades de tecnología en LATAM.",
+      "text5": "Ser speaker recurrente en eventos de desarrollo web.",
+      "text6": "Brindar +30 sesiones de mentoría gratuitas a otros desarrolladores."
+    }
+  },
+  "projects": {
+    "title": "Trabajos de clientes"
+  },
+  "personalProjects": {
+    "title": "Proyectos propios"
+  },
+  "unicornio": {
+    "description": "Unicornio dev es una comunidad que surgió como un espacio donde aprender en público e intercambiar conocimientos con otros Devs. Sigo desarrollando este proyecto personal mientras profundizo mi camino profesional como Desarrolladora Web. Hoy en día, unicornio dev tiene +10k seguidores en conjunto a través de sus distintas plataformas sociales.",
+    "discord": "Visita la comunidad en Discord"
+  },
+  "contact": {
+    "title": "Charlemos",
+    "description": "No dudes en escribirme si necesitas contratar un desarrollador, tienes alguna duda o simplemente quieres conectar conmigo."
+  }
+}

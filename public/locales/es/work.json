@@ -1,0 +1,67 @@
+{
+  "work": {
+    "title": "Experiencia Laboral",
+    "raddix": {
+      "title": "Frontend Developer Web",
+      "company": "RADDIX.TECH (Freelance)",
+      "link": "https://raddix.tech",
+      "date": "(Enero 2023 - Actualidad)",
+      "experience": {
+        "description": "raddix.tech es un estudio de desarrollo y diseño web orientado a trabajar con clientes y otras empresas de tecnología.",
+        "stack": "Tech Stack: React, Next.js, Astro.js, PostgreSQL, Tailwind CSS, TypeScript, JavaScript, HTML, CSS vanilla, Git y GitHub.",
+        "list": {
+          "text1": "Desarrollar los proyectos de web/apps de múltiples clientes.",
+          "text2": "Programar y Diseñar web/apps desde cero hasta su lanzamiento.",
+          "text3": "Asesorar clientes en temas de desarrollo web según sus necesidades de negocio.",
+          "text4": "Seleccionar herramientas técnicas ajustadas al proyecto y presupuesto.",
+          "text5": "Mantener, documentar y actualizar el código de las funcionalidades desarrolladas."
+        }
+      }
+    },
+    "unicornio": {
+      "title": "Tech Content Creator",
+      "company": "UNICORNIO.DEV (Autónomo)",
+      "link": "https://unicornio.dev",
+      "date": "(Diciembre 2022 - Actualidad)",
+      "experience": {
+        "description": "unicornio.dev es un proyecto personal orientado a brindar acompañamiento y contenidos de valor a personas que están aprendiendo a programar.",
+        "list": {
+          "text1": "Crear contenido técnico y proyectos open source en múltiples plataformas.",
+          "text2": "Implementar y mantener +5 plataformas redes de difusión activas.",
+          "text3": "Llegar a +10000 seguidores con el contenido producido.",
+          "text4": "Desarrollar, diseñar y mejorar la propia plataforma web del proyecto.",
+          "text5": "Colaborar con otras comunidades tech de LATAM, como La Comu Dev y Mermelada Tech."
+        }
+      }
+    },
+    "apx": {
+      "title": "Product Manager / UX Designer",
+      "company": "APX.SCHOOL (Full-Time)",
+      "link": "https://apx.school",
+      "date": "(Mayo 2021 - Diciembre 2022)",
+      "experience": {
+        "description": "apx.school es una academia de programación online enfocada en la enseñanza de desarrollo web fullstack de forma asincrónica y autogestionada.",
+        "list": {
+          "text1": "Liderar 2 squads de producto (8 personas) que combinaban las áreas de Programación, Diseño UX y Desarrollo de contenidos.",
+          "text2": "Lanzar al mercado 2 productos completos + la creación de múltiples funcionalidades para la plataforma de estudiantes.",
+          "text3": "Guiar a los miembros del equipo para trabajar dentro del marco de metodologías ágiles (Scrum), cubriendo el rol de Product Owner.",
+          "text4": "Diseñar y Brindar asesoramiento en temas de Diseño de experiencia de usuario, investigación con usuarios y desarrollo de Interfaces (Diseño UI)."
+        }
+      }
+    },
+    "metodo": {
+      "title": "Docente universitaria UX Research",
+      "company": "FADU-UBA (Part-Time)",
+      "link": "https://metodo-uba.vercel.app",
+      "date": "(Abril 2021 - Noviembre 2022)",
+      "experience": {
+        "description": "Docente de la Cátedra Ex-Galán (FADU-UBA), donde ayudé a cientos de estudiantes de la Carrera de Diseño Industrial a formarse en metodologías de la investigación orientada al desarrollo de productos. Durante la cursada, los estudiantes adquieren habilidades en:",
+        "list": {
+          "text1": "Aplicar Design Thinking para la resolución de problemas complejos.",
+          "text2": "Conocer las metodologías y procesos de UX Research.",
+          "text3": "Desarrollar pensamiento crítico y elaboración de informes de investigación."
+        }
+      }
+    }
+  }
+}
