@@ -33,5 +33,9 @@
   "unicornio": {
     "description": "Unicornio dev is a tech community that emerged as a space to learn in public and exchange knowledge with other Devs. I continue to develop this personal project while deepening my professional path as a Web Developer. Nowadays, Unicornio dev has +10k followers in total across different social platforms.",
     "discord": "Come say hi to our Discord server!"
+  },
+  "contact": {
+    "title": "Let´s connect!",
+    "description": "Feel free to reach out if you´re looking for a developer, have a question, or just want to connect."
   }
 }

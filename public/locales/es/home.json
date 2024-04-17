@@ -33,5 +33,9 @@
   "unicornio": {
     "description": "Unicornio dev es una comunidad que surgió como un espacio donde aprender en público e intercambiar conocimientos con otros Devs. Sigo desarrollando este proyecto personal mientras profundizo mi camino profesional como Desarrolladora Web. Hoy en día, unicornio dev tiene +10k seguidores en conjunto a través de sus distintas plataformas sociales.",
     "discord": "Visita la comunidad en Discord"
+  },
+  "contact": {
+    "title": "Charlemos",
+    "description": "No dudes en escribirme si necesitas contratar un desarrollador, tienes alguna duda o simplemente quieres conectar conmigo."
   }
 }
