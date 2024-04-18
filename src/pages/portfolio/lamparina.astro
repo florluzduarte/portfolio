@@ -1,6 +1,7 @@
 ---
 import { t, setDefaultNamespace, changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
+import CaseStudyLayout from "../../layouts/CaseStudyLayout.astro";
 
 changeLanguage("es");
 
@@ -8,5 +9,7 @@ setDefaultNamespace("lamparina");
 ---
 
 <Layout title={t("site.title")} description={t("layout:site.description")}>
-  <div></div>
+  <CaseStudyLayout workType="Frontend">
+    <div></div>
+  </CaseStudyLayout>
 </Layout>

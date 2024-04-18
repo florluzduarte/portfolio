@@ -18,5 +18,6 @@
     "credits-2": " and ",
     "credits-3": " Astro"
   },
-  "emailToast": "Email copied to clipboard"
+  "emailToast": "Email copied to clipboard",
+  "backButton": "Go Back"
 }

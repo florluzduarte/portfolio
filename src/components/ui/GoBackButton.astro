@@ -1,0 +1,14 @@
+---
+import { Icon } from "astro-icon/components";
+import { t, setDefaultNamespace } from "i18next";
+
+setDefaultNamespace("layout");
+---
+
+<a
+  href="/"
+  class="flex items-center gap-2 underline underline-offset-4 hover:text-pink-400"
+>
+  <Icon name="arrow-left" size={24} />
+  <span>{t("backButton")}</span>
+</a>

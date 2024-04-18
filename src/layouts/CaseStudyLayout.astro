@@ -1,0 +1,22 @@
+---
+import HeroBar from "../components/layout/case-study-layout/HeroBar.astro";
+import GoBackButton from "../components/ui/GoBackButton.astro";
+import LetsConnect from "../components/ui/LetsConnect.astro";
+
+interface Props {
+  workType: "Frontend" | "Backend" | "Fullstack" | "Design";
+}
+
+const { workType } = Astro.props;
+---
+
+<main
+  class="min-h-screen flex flex-col gap-14 mt-14 lg:mt-24 mx-6 md:max-w-2xl md:mx-auto lg:max-w-3xl xl:max-w-5xl"
+>
+  <HeroBar workType={workType} />
+  <slot />
+  <GoBackButton />
+  <section>
+    <LetsConnect />
+  </section>
+</main>

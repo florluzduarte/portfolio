@@ -18,5 +18,6 @@
     "credits-2": " y ",
     "credits-3": " Astro"
   },
-  "emailToast": "Email copiado en el portapapeles"
+  "emailToast": "Email copiado en el portapapeles",
+  "backButton": "Volver"
 }
