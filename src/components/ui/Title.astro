@@ -1,0 +1,21 @@
+---
+interface Props {
+  plainText: string;
+  colorText: string;
+}
+
+const { plainText, colorText } = Astro.props;
+---
+
+<h1
+  class="text-[32px] text-center leading-[50px] md:text-left lg:text-[48px] lg:leading-[60px] xl:leading-[85px] xl:text-[64px]"
+>
+  <span>
+    {plainText}
+  </span>
+  <span class="font-bold text-pink-400">
+    {colorText}
+  </span>
+</h1>
+
+<!-- bg-gradient-to-t from-yellow-200 to-pink-400 inline-block text-transparent bg-clip-text -->

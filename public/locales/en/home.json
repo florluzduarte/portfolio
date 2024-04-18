@@ -1,0 +1,41 @@
+{
+  "title": {
+    "plainText": "I help companies build products with ",
+    "colorText": "Code and Design"
+  },
+  "photo": {
+    "alt": "Flor Luz Duarte profile picture"
+  },
+  "bio": "Hello! My name is Florencia Luz Duarte. I am a Front-end Developer and Product Designer based in Buenos Aires, Argentina.",
+  "myStory": {
+    "title": "My Story",
+    "texts": {
+      "text1": "After 10+ years working as a Designer, I decided to give programming a chance and it ended up stealing my heart (professionally speaking).",
+      "text2": "What started with a few lines of code, ended up scaling to a professional transformation, which has led me to learn web programming on my own for the last 2+ years.",
+      "text3": "During this process, I have managed to:",
+      "text4": "My mission is to act as a bridge between the worlds of Programming and Design, making the most of both facets of my professional journey for the development of websites and apps."
+    },
+    "list": {
+      "text1": "Develop multiple websites/apps for different clients.",
+      "text2": "Build a tech community for programmers called Unicornio Dev.",
+      "text3": "Create technical content and open source projects on multiple platforms.",
+      "text4": "Actively collaborate with other technology communities in LATAM.",
+      "text5": "Be a recurring speaker at web development events.",
+      "text6": "Give +30 free mentoring sessions to other developers."
+    }
+  },
+  "projects": {
+    "title": "Latest Client Work"
+  },
+  "personalProjects": {
+    "title": "Selected Personal Projects"
+  },
+  "unicornio": {
+    "description": "Unicornio dev is a tech community that emerged as a space to learn in public and exchange knowledge with other Devs. I continue to develop this personal project while deepening my professional path as a Web Developer. Nowadays, Unicornio dev has +10k followers in total across different social platforms.",
+    "discord": "Come say hi to our Discord server!"
+  },
+  "contact": {
+    "title": "Let´s connect!",
+    "description": "Feel free to reach out if you´re looking for a developer, have a question, or just want to connect."
+  }
+}
