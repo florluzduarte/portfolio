@@ -1,12 +1,28 @@
 ---
 import { t, setDefaultNamespace, changeLanguage } from "i18next";
 import Layout from "../../../layouts/Layout.astro";
+import CaseStudyLayout from "../../../layouts/CaseStudyLayout.astro";
+import Subtitle from "../../../components/ui/Subtitle.astro";
 
 changeLanguage("en");
 
 setDefaultNamespace("lamparina");
+const lamparinaData = {
+    colorText: "Lamparina",
+    plainText: "Website",
+    altText: "Lamparina Hero Image",
+    imagePath: "/src/assets/cases/heroLamparina.png",
+    deploy: "https://lamparina.ar",
+};
 ---
 
 <Layout title={t("site.title")} description={t("layout:site.description")}>
-  <div></div>
+  <CaseStudyLayout workType="Frontend" {...lamparinaData}>
+    <article class="flex flex-col gap-6 md:max-w-xl md:mx-auto lg:max-w-3xl">
+      <Subtitle title={t("caseStudy:introduction")} />
+      <p>{t("project.description.text1")}</p>
+      <p>{t("project.description.text2")}</p>
+      <p>{t("project.description.text3")}</p>
+    </article>
+  </CaseStudyLayout>
 </Layout>

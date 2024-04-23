@@ -19,5 +19,7 @@
     "credits-3": " Astro"
   },
   "emailToast": "Email copied to clipboard",
-  "backButton": "Go Back"
+  "backButton": "Go Back",
+  "deployButton": "Go to live web/app",
+  "repositoryButton": "Go to repository"
 }

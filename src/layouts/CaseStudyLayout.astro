@@ -1,19 +1,42 @@
 ---
+import CaseStudyHero from "../components/layout/case-study-layout/CaseStudyHero.astro";
 import HeroBar from "../components/layout/case-study-layout/HeroBar.astro";
 import GoBackButton from "../components/ui/GoBackButton.astro";
 import LetsConnect from "../components/ui/LetsConnect.astro";
 
 interface Props {
   workType: "Frontend" | "Backend" | "Fullstack" | "Design";
+  colorText: string;
+  plainText: string;
+  altText: string;
+  imagePath: string;
+  deploy?: string;
+  repository?: string;
 }
 
-const { workType } = Astro.props;
+const {
+  workType,
+  colorText,
+  plainText,
+  altText,
+  imagePath,
+  deploy,
+  repository,
+} = Astro.props;
 ---
 
 <main
   class="min-h-screen flex flex-col gap-14 mt-14 lg:mt-24 mx-6 md:max-w-2xl md:mx-auto lg:max-w-3xl xl:max-w-5xl"
 >
   <HeroBar workType={workType} />
+  <CaseStudyHero
+    {colorText}
+    {plainText}
+    {altText}
+    {imagePath}
+    {deploy}
+    {repository}
+  />
   <slot />
   <GoBackButton />
   <section>

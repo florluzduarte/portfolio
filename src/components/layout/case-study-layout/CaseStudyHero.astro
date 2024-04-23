@@ -1,0 +1,48 @@
+---
+import Button from "../../ui/Button.astro";
+import Title from "../../ui/Title.astro";
+import BannerImage from "./BannerImage.astro";
+
+interface Props {
+  plainText: string;
+  colorText: string;
+  altText: string;
+  imagePath: string;
+  deploy?: string;
+  repository?: string;
+}
+
+const { plainText, colorText, altText, imagePath, deploy, repository } =
+  Astro.props;
+---
+
+<section class="flex flex-col gap-6 md:gap-12">
+  <Title plainText={plainText} colorText={colorText} />
+  <BannerImage altText={altText} imagePath={imagePath} />
+  <div class="flex gap-4">
+    {
+      deploy && (
+        <Button
+          path={deploy}
+          type="link"
+          iconName="web"
+          iconPosition="left"
+          iconSize={24}
+          title="Go to Live Website"
+        />
+      )
+    }
+    {
+      repository && (
+        <Button
+          path={repository}
+          type="link"
+          iconName="github"
+          iconPosition="left"
+          iconSize={24}
+          title="Go to Repository"
+        />
+      )
+    }
+  </div>
+</section>

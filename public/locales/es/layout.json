@@ -19,5 +19,7 @@
     "credits-3": " Astro"
   },
   "emailToast": "Email copiado en el portapapeles",
-  "backButton": "Volver"
+  "backButton": "Volver",
+  "deployButton": "Visitar la web/app",
+  "repositoryButton": "Ver repositorio"
 }
