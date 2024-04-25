@@ -21,5 +21,12 @@
   "emailToast": "Email copiado en el portapapeles",
   "backButton": "Volver",
   "deployButton": "Visitar la web/app",
-  "repositoryButton": "Ver repositorio"
+  "repositoryButton": "Ver repositorio",
+  "caseStudyNavbar": {
+    "text1": "Introducción",
+    "text2": "Rol y tareas",
+    "text3": "Tecnologías usadas",
+    "text4": "Destacado",
+    "text5": "Aprendizajes"
+  }
 }

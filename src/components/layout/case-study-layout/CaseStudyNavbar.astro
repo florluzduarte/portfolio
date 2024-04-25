@@ -1,0 +1,24 @@
+---
+import { t, setDefaultNamespace } from "i18next";
+
+setDefaultNamespace("layout");
+
+const navItems = ["#introduction", "#role", "#stack", "#spotlight", "#lessons"];
+---
+
+<nav class="hidden md:block md:mt-4">
+  <ul class="sticky top-[100px] flex flex-col gap-3">
+    {
+      navItems.map((item, index) => (
+        <li>
+          <a
+            href={item}
+            class="hover:text-pink-400 active:text-pink-400 scroll-smooth"
+          >
+            {t(`caseStudyNavbar.text${index + 1}`)}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

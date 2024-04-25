@@ -7,7 +7,9 @@ import { LanguageSelector } from "astro-i18next/components";
 setDefaultNamespace("layout");
 ---
 
-<nav class="border-b-[0.5px] border-gray-300 bg-gray-600 sticky">
+<nav
+  class="border-b-[0.5px] border-gray-300 bg-gray-600 fixed w-full top-0 z-20"
+>
   <div
     class="flex justify-between items-center px-6 py-4 lg:max-w-7xl lg:mx-auto"
   >
@@ -21,16 +23,16 @@ setDefaultNamespace("layout");
     <div class="hidden lg:flex lg:gap-10 items-center">
       <ul class="lg:flex lg:gap-10">
         <li class="hover:text-gray-200">
-          <a href="#work">{t("navbar.links.work")}</a>
+          <a href="/#work">{t("navbar.links.work")}</a>
         </li>
         <li class="hover:text-gray-200">
-          <a href="#projects">{t("navbar.links.projects")}</a>
+          <a href="/#projects">{t("navbar.links.projects")}</a>
         </li>
         <li class="hover:text-gray-200">
-          <a href="#community">{t("navbar.links.community")}</a>
+          <a href="/#community">{t("navbar.links.community")}</a>
         </li>
         <li class="hover:text-gray-200">
-          <a href="#contact">{t("navbar.links.contact")}</a>
+          <a href="/#contact">{t("navbar.links.contact")}</a>
         </li>
       </ul>
       <LanguageSelector
@@ -56,20 +58,21 @@ setDefaultNamespace("layout");
       </button>
       <ul class="flex flex-col gap-6">
         <li>
-          <a href="#work" class="link-button">{t("navbar.links.work")}</a>
+          <a href="/#work" class="link-button">{t("navbar.links.work")}</a>
         </li>
         <li>
-          <a href="#projects" class="link-button"
+          <a href="/#projects" class="link-button"
             >{t("navbar.links.projects")}</a
           >
         </li>
         <li>
-          <a href="#community" class="link-button"
+          <a href="/#community" class="link-button"
             >{t("navbar.links.community")}</a
           >
         </li>
         <li>
-          <a href="#contact" class="link-button">{t("navbar.links.contact")}</a>
+          <a href="/#contact" class="link-button">{t("navbar.links.contact")}</a
+          >
         </li>
       </ul>
       <LanguageSelector

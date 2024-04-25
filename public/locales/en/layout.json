@@ -21,5 +21,12 @@
   "emailToast": "Email copied to clipboard",
   "backButton": "Go Back",
   "deployButton": "Go to live web/app",
-  "repositoryButton": "Go to repository"
+  "repositoryButton": "Go to repository",
+  "caseStudyNavbar": {
+    "text1": "Introduction",
+    "text2": "Team & Role",
+    "text3": "Tech Stack",
+    "text4": "Spotlight",
+    "text5": "Lessons Learned"
+  }
 }
