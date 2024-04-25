@@ -3,6 +3,7 @@ import { t, setDefaultNamespace, changeLanguage } from "i18next";
 import Layout from "../../../layouts/Layout.astro";
 import CaseStudyLayout from "../../../layouts/CaseStudyLayout.astro";
 import Subtitle from "../../../components/ui/Subtitle.astro";
+import Bullet from "../../../components/ui/Bullet.astro";
 
 changeLanguage("en");
 
@@ -14,15 +15,62 @@ const lamparinaData = {
     imagePath: "/src/assets/cases/heroLamparina.png",
     deploy: "https://lamparina.ar",
 };
+const techBulletsAux = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 ---
 
 <Layout title={t("site.title")} description={t("layout:site.description")}>
   <CaseStudyLayout workType="Frontend" {...lamparinaData}>
-    <article class="flex flex-col gap-6 md:max-w-xl md:mx-auto lg:max-w-3xl">
-      <Subtitle title={t("caseStudy:introduction")} />
-      <p>{t("project.description.text1")}</p>
-      <p>{t("project.description.text2")}</p>
-      <p>{t("project.description.text3")}</p>
-    </article>
+    <div class="flex flex-col gap-14">
+      <section
+        class="flex flex-col gap-6 snap-y scroll-my-28"
+        id="introduction"
+      >
+        <Subtitle title={t("caseStudy:introduction")} />
+        <p>{t("project.description.text1")}</p>
+        <p>{t("project.description.text2")}</p>
+        <p>{t("project.description.text3")}</p>
+      </section>
+
+      <section class="flex flex-col gap-6 snap-y scroll-my-28" id="role">
+        <Subtitle title={t("caseStudy:role")} />
+        <p>
+          <span class="text-pink-400 me-3 ms-4">-</span>{
+            t("project.role.text1")
+          }
+        </p>
+        <p>
+          <span class="text-pink-400 me-3 ms-4">-</span>{
+            t("project.role.text2")
+          }
+        </p>
+      </section>
+
+      <section class="flex flex-col gap-6 snap-y scroll-my-28" id="stack">
+        <Subtitle title={t("caseStudy:stack")} />
+        <p>{t("project.stack.description")}</p>
+        <ul class="flex flex-col gap-3 ms-4 mt-3">
+          {
+            techBulletsAux.map((bullet) => (
+              <Bullet order={bullet}>
+                <p>{t(`project.stack.list.text${bullet}`)}</p>
+              </Bullet>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section class="flex flex-col gap-6 snap-y scroll-my-28" id="spotlight">
+        <Subtitle title={t("caseStudy:spotlight")} />
+        <p>{t("project.spotlight.text1")}</p>
+        <p>{t("project.spotlight.text2")}</p>
+      </section>
+
+      <section class="flex flex-col gap-6 snap-y scroll-my-28" id="lessons">
+        <Subtitle title={t("caseStudy:lessons")} />
+        <p>{t("project.lessons.text1")}</p>
+        <p>{t("project.lessons.text2")}</p>
+        <p>{t("project.lessons.text3")}</p>
+      </section>
+    </div>
   </CaseStudyLayout>
 </Layout>
