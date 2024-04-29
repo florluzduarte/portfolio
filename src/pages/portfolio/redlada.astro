@@ -1,6 +1,86 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, setDefaultNamespace, changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import CaseStudyLayout from "../../layouts/CaseStudyLayout.astro";
+import CaseStudySection from "../../components/case-studies/CaseStudySection.astro";
+import CaseStudyContainer from "../../components/case-studies/CaseStudyContainer.astro";
+import Subtitle from "../../components/ui/Subtitle.astro";
+import Bullet from "../../components/ui/Bullet.astro";
 
 changeLanguage("es");
+
+setDefaultNamespace("redlada");
+const redladaData = {
+    colorText: "RedLaDA",
+    plainText: "Website",
+    altText: "RedLaDA Hero Image",
+    imagePath: "/src/assets/cases/hero-redlada.png",
+    deploy: "https://www.lafooddesign.org/",
+};
+const descAuxArray = [1, 2, 3, 4, 5, 6];
+const techBulletsAux = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 ---
 
+<Layout title={t("site.title")} description={t("layout:site.description")}>
+  <CaseStudyLayout {...redladaData} workType="Frontend">
+    <CaseStudyContainer>
+      <CaseStudySection sectionId="introduction">
+        <Subtitle title={t("caseStudy:introduction")} />
+        <p>{t("project.description.text1")}</p>
+        <p>{t("project.description.text2")}</p>
+        <p>{t("project.description.text3")}</p>
+        <ul class="flex flex-col gap-3 ms-4 mt-3">
+          {
+            descAuxArray.map((bullet) => (
+              <Bullet order={bullet}>
+                <p>{t(`project.description.list.text${bullet}`)}</p>
+              </Bullet>
+            ))
+          }
+        </ul>
+        <p>{t("project.description.text4")}</p>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="role">
+        <Subtitle title={t("caseStudy:role")} />
+        <p>
+          <span class="text-pink-400 me-3 ms-4">-</span>{
+            t("project.role.text1")
+          }
+        </p>
+        <p>
+          <span class="text-pink-400 me-3 ms-4">-</span>{
+            t("project.role.text2")
+          }
+        </p>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="stack">
+        <Subtitle title={t("caseStudy:stack")} />
+        <p>{t("project.stack.description")}</p>
+        <ul class="flex flex-col gap-3 ms-4 mt-3">
+          {
+            techBulletsAux.map((bullet) => (
+              <Bullet order={bullet}>
+                <p>{t(`project.stack.list.text${bullet}`)}</p>
+              </Bullet>
+            ))
+          }
+        </ul>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="spotlight">
+        <Subtitle title={t("caseStudy:spotlight")} />
+        <p>{t("project.spotlight.text1")}</p>
+        <p>{t("project.spotlight.text2")}</p>
+        <p>{t("project.spotlight.text3")}</p>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="lessons">
+        <Subtitle title={t("caseStudy:lessons")} />
+        <p>{t("project.lessons.text1")}</p>
+        <p>{t("project.lessons.text2")}</p>
+      </CaseStudySection>
+    </CaseStudyContainer>
+  </CaseStudyLayout>
+</Layout>

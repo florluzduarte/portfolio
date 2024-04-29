@@ -1,0 +1,50 @@
+{
+  "site": {
+    "title": "Flor Luz Duarte | RedLaDA"
+  },
+  "project": {
+    "description": {
+      "text1": "The Latin American Network of Food Design (RedLaDA) is a non-profit organization, headquartered in Uruguay, that brings together researchers, organizations, companies, and individuals from all over Latin America related to Food Design.",
+      "text2": "The organizers of this network decided to contact me to redesign and migrate their website, which was originally made in Wix and caused them multiple inconveniences.",
+      "text3": "The main pain points they experienced with the old site were:",
+      "text4": "After quite exhaustive work carried out in multiple stages, the entire website was renovated and re-implemented with excellent acceptance from the RedLaDA community.",
+      "list": {
+        "text1": "Chaotic navigation and information structure",
+        "text2": "Duplicate information on multiple pages",
+        "text3": "Inability to keep the site updated",
+        "text4": "Outdated design and branding",
+        "text5": "Poor reuse of components",
+        "text6": "Poor site performance"
+      }
+    },
+    "link": "https://www.lafooddesign.org/",
+    "role": {
+      "text1": "Frontend Developer",
+      "text2": "UX/UI Designer"
+    },
+    "stack": {
+      "description": "In this project, I decided to use Next.js to ensure that the website can continue to scale according to the future needs of the organization.",
+      "list": {
+        "text1": "Next.js --> Framework",
+        "text2": "JavaScript --> Programming Language",
+        "text3": "Prop-Types --> For type checking",
+        "text4": "CSS Modules --> To handle component styles",
+        "text5": "Vercel --> For deployment",
+        "text6": "react-Icons --> To use multiple icons",
+        "text7": "react-circle-flags --> For flag icons",
+        "text8": "Cloudinary --> To manage images and other assets",
+        "text9": "Figma --> For design and prototyping",
+        "text10": "Miro --> As a collaborative tool used to work with the client in several workshops"
+      }
+    },
+    "spotlight": {
+      "text1": "Within the challenges of this project, I would like to highlight two things:",
+      "text2": "First, the work done with the client, which took multiple collaborative meetings to optimize the site's information architecture and manage the large amount of information they needed to make visible on this institutional page.",
+      "text3": "The design and frontend work done to provide this organization with a modern site, with its own custom components and without duplicate code, that is easy to maintain and continue scaling."
+    },
+    "lessons": {
+      "text1": "This project was a formative experience for me, as up to this point, I had not worked on a web/app of this size with multiple screens and information at different levels. The realization took several months of development, combining the work prior to the design process + the code implementation of the site.",
+      "text2": "It allowed me to deepen my technical skills in Next.js and React, in addition to giving me good experiences conducting workshops with multiple people from the core team of the organization. These collaborative meetings allowed me to polish my communication and project management skills."
+    }
+  }
+}

@@ -4,6 +4,10 @@ import Layout from "../../../layouts/Layout.astro";
 import CaseStudyLayout from "../../../layouts/CaseStudyLayout.astro";
 import Subtitle from "../../../components/ui/Subtitle.astro";
 import Bullet from "../../../components/ui/Bullet.astro";
+import CaseStudySection from "../../../components/case-studies/CaseStudySection.astro";
+import CaseStudyContainer from "../../../components/case-studies/CaseStudyContainer.astro";
+import { Image } from "astro:assets";
+import metricsImg from "../../../assets/cases/metrics-lamparina.png";
 
 changeLanguage("en");
 
@@ -20,18 +24,15 @@ const techBulletsAux = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 <Layout title={t("site.title")} description={t("layout:site.description")}>
   <CaseStudyLayout workType="Frontend" {...lamparinaData}>
-    <div class="flex flex-col gap-14">
-      <section
-        class="flex flex-col gap-6 snap-y scroll-my-28"
-        id="introduction"
-      >
+    <CaseStudyContainer>
+      <CaseStudySection sectionId="introduction">
         <Subtitle title={t("caseStudy:introduction")} />
         <p>{t("project.description.text1")}</p>
         <p>{t("project.description.text2")}</p>
         <p>{t("project.description.text3")}</p>
-      </section>
+      </CaseStudySection>
 
-      <section class="flex flex-col gap-6 snap-y scroll-my-28" id="role">
+      <CaseStudySection sectionId="role">
         <Subtitle title={t("caseStudy:role")} />
         <p>
           <span class="text-pink-400 me-3 ms-4">-</span>{
@@ -43,9 +44,9 @@ const techBulletsAux = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
             t("project.role.text2")
           }
         </p>
-      </section>
+      </CaseStudySection>
 
-      <section class="flex flex-col gap-6 snap-y scroll-my-28" id="stack">
+      <CaseStudySection sectionId="stack">
         <Subtitle title={t("caseStudy:stack")} />
         <p>{t("project.stack.description")}</p>
         <ul class="flex flex-col gap-3 ms-4 mt-3">
@@ -57,20 +58,21 @@ const techBulletsAux = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
             ))
           }
         </ul>
-      </section>
+      </CaseStudySection>
 
-      <section class="flex flex-col gap-6 snap-y scroll-my-28" id="spotlight">
+      <CaseStudySection sectionId="spotlight">
         <Subtitle title={t("caseStudy:spotlight")} />
         <p>{t("project.spotlight.text1")}</p>
         <p>{t("project.spotlight.text2")}</p>
-      </section>
+        <Image src={metricsImg} alt="Lamparina metrics" />
+      </CaseStudySection>
 
-      <section class="flex flex-col gap-6 snap-y scroll-my-28" id="lessons">
+      <CaseStudySection sectionId="lessons">
         <Subtitle title={t("caseStudy:lessons")} />
         <p>{t("project.lessons.text1")}</p>
         <p>{t("project.lessons.text2")}</p>
         <p>{t("project.lessons.text3")}</p>
-      </section>
-    </div>
+      </CaseStudySection>
+    </CaseStudyContainer>
   </CaseStudyLayout>
 </Layout>
