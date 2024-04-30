@@ -1,0 +1,50 @@
+{
+  "site": {
+    "title": "Flor Luz Duarte | RedLaDA"
+  },
+  "project": {
+    "description": {
+      "text1": "La Red Latinoamericana de Diseño y Alimentos (RedLaDA), es una organización sin fines de lucro, con sede central en Uruguay, que nuclea a investigadores, organismos, empresas e individuos de todo Latinoamérica relacionados con el Diseño de Alimentos (Food Design).",
+      "text2": "Los organizadores de esta red decidieron contactarme para realizar el rediseño y la migración de su sitio web; el cual estaba originalmente realizado en Wix, y les ocasionaba múltiples inconveniente.",
+      "text3": "Los principales puntos de dolor que experimentaban con el sitio viejo eran:",
+      "text4": "Luego de un trabajo bastante exhaustivo realizado en múltiples etapas se logró renovar toda la web y re implementarla con excelente aceptación de la comunidad de RedLaDA.",
+      "list": {
+        "text1": "Navegación y estructura de la información caótica",
+        "text2": "Información duplicada en múltiples páginas",
+        "text3": "Incapacidad para mantener actualizado el sitio",
+        "text4": "Diseño y branding desactualizados e incongruentes",
+        "text5": "Pobre reutilización de componentes",
+        "text6": "Mala performance del sitio"
+      }
+    },
+    "link": "https://www.lafooddesign.org/",
+    "role": {
+      "text1": "Frontend Developer",
+      "text2": "UX/UI Designer"
+    },
+    "stack": {
+      "description": "En este proyecto decidí utilizar Next.js para poder garantizar que el sitio web puede seguir escalando según las futuras necesidades de la organización.",
+      "list": {
+        "text1": "Next.js --> Como framework principal",
+        "text2": "JavaScript --> Como lenguaje de programación",
+        "text3": "Prop-Types --> Para el tipado de componentes",
+        "text4": "CSS Modules --> Para el manejo de estilos",
+        "text5": "Vercel --> Para realizar el deploy del proyecto",
+        "text6": "react-Icons --> Para íconos",
+        "text7": "react-circle-flags --> Para íconos de banderas nacionales",
+        "text8": "Cloudinary --> Para la gestión de imágenes y otros assets",
+        "text9": "Figma --> Para diseños y prototipos",
+        "text10": "Miro --> Como herramienta colaborativa para realizar workshops con el cliente"
+      }
+    },
+    "spotlight": {
+      "text1": "Dentro de los desafíos de este proyecto me gustaría destacar dos cosas:",
+      "text2": "Primero, el trabajo realizado junto al cliente, que llevó múltiples reuniones colaborativas para poder optimizar la arquitectura de la información del sitio y gestionar la gran cantidad de data de necesitaban visibilizar en esta página institucional.",
+      "text3": "Segundo, el trabajo realizado de diseño y frontend para brindarle a esta organización un sitio moderno, con sus propios componentes personalizados y sin código duplicado, que sea fácil de mantener y seguir escalando."
+    },
+    "lessons": {
+      "text1": "Este proyecto fue para mí una experiencia formativa, ya que hasta este punto, no había trabajado en una web / app de estas dimensiones con múltiples pantallas e información en distintos niveles. La realización llevó varios meses de desarrollo, combinando el trabajo previo al proceso de diseño + la implementación en código del sitio.",
+      "text2": "Me permitió profundizar mis habilidades técnicas en Next.js y React, además de darme buenas experiencias realizando workshops con múltiples personas del núcleo de la organización. Estas reuniones colaborativas me permitieron pulir mis habilidades de comunicación y gestión de proyectos."
+    }
+  }
+}

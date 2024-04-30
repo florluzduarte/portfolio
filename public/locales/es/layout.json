@@ -18,5 +18,15 @@
     "credits-2": " y ",
     "credits-3": " Astro"
   },
-  "emailToast": "Email copiado en el portapapeles"
+  "emailToast": "Email copiado en el portapapeles",
+  "backButton": "Volver",
+  "deployButton": "Visitar la web/app",
+  "repositoryButton": "Ver repositorio",
+  "caseStudyNavbar": {
+    "text1": "Introducción",
+    "text2": "Rol y tareas",
+    "text3": "Tecnologías usadas",
+    "text4": "Destacado",
+    "text5": "Aprendizajes"
+  }
 }

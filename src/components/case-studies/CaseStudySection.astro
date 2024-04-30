@@ -1,0 +1,11 @@
+---
+interface Props {
+  sectionId: string;
+}
+
+const { sectionId } = Astro.props;
+---
+
+<section class="flex flex-col gap-6 snap-y scroll-my-28" id={sectionId}>
+  <slot />
+</section>

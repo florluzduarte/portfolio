@@ -1,0 +1,15 @@
+---
+import GoBackButton from "../../ui/GoBackButton.astro";
+import WorkTypeBadge from "../../ui/WorkTypeBadge.astro";
+
+interface Props {
+  workType: "Frontend" | "Backend" | "Fullstack" | "Design";
+}
+
+const { workType } = Astro.props;
+---
+
+<div class="flex items-center justify-between">
+  <WorkTypeBadge workType={workType} />
+  <GoBackButton />
+</div>

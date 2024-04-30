@@ -1,5 +1,41 @@
 {
   "site": {
     "title": "Flor Luz Duarte | Lamparina"
+  },
+  "project": {
+    "description": {
+      "text1": "Lamparina is a small business dedicated to manufacturing design lamps made from materials recovered by urban collectors.",
+      "text2": "My key goal for this project was to provide the business with a strong presence and tools to share their work and products online.",
+      "text3": "Before the development of Lamparina's website, this small business carried out all its marketing efforts thanks to word of mouth, and its ability to reach new customers was highly limited."
+    },
+    "link": "https://lamparina.ar",
+    "role": {
+      "text1": "Frontend Dev",
+      "text2": "UX/UI Designer"
+    },
+    "stack": {
+      "description": "For this project, I decided to use Astro as the main framework because this website content is mainly static, and this situation is perfect to benefit from Astro's performance and island component-based rendering.",
+      "list": {
+        "text1": "Astro --> As framework",
+        "text2": "React --> To build some interactive components",
+        "text3": "TypeScript --> For logic and type checking",
+        "text4": "Tailwind CSS --> To create the UI styles",
+        "text5": "Netlify --> For deployment",
+        "text6": "Embla --> For carousel implementation",
+        "text7": "Email.js --> To handle emails",
+        "text8": "Toastify --> To improve user experience",
+        "text9": "Astro Icon --> Helpful to optimize icons and SVGs",
+        "text10": "Figma --> For designing and prototyping"
+      }
+    },
+    "spotlight": {
+      "text1": "The primary technical focus of this website was its performance. I worked consistently to apply good practices for accessibility and SEO, that could benefit the business positioning and user experience.",
+      "text2": "I also worked with the client to curate the correct information that was going to be displayed on the site, as it was a key item to convey the right message according to the brand."
+    },
+    "lessons": {
+      "text1": "I exercise my soft skills working with the client to define the correct scope of the project.",
+      "text2": "Due to time and resource constraints, I needed to provide different approaches for this website to find the correct balance between the client's needs and capabilities.",
+      "text3": "I was able to use my communication skills to outline the pros and cons of each solution. That way we reached an agreement point before development started."
+    }
   }
 }
