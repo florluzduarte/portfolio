@@ -1,5 +1,41 @@
 {
   "site": {
     "title": "Flor Luz Duarte | Lamparina"
+  },
+  "project": {
+    "description": {
+      "text1": "Lamparina es un emprendimiento con mirada social que se dedica a la creación de lámparas de diseño a partir de material recuperado por recolectores urbanos.",
+      "text2": "Mi trabajo para este proyecto consistió en brindarle al emprendimiento presencia y herramientas para compartir su labor y productos online.",
+      "text3": "Antes del desarrollo de la web de Lamparina, el emprendimiento realizaba toda su difusión gracias al boca en boca, y su capacidad para llegar a nuevos clientes era extremadamente limitada."
+    },
+    "link": "https://lamparina.ar",
+    "role": {
+      "text1": "Frontend Dev",
+      "text2": "UX/UI Designer"
+    },
+    "stack": {
+      "description": "En este proyecto decidí utilizar Astro ya que el sitio es principalmente estático y esto permite aprovechar la excelente performance y renderizado por islas de este framework.",
+      "list": {
+        "text1": "Astro --> Como framework",
+        "text2": "React --> Para algunos componentes interactivos",
+        "text3": "TypeScript --> Para el tipado de componentes y lógica",
+        "text4": "Tailwind CSS --> Para el manejo de estilos",
+        "text5": "Netlify --> Para realizar el deploy del proyecto",
+        "text6": "Embla --> Para el uso de carruseles de imágenes",
+        "text7": "Email.js --> Para el manejo de emails",
+        "text8": "Toastify --> Para el uso de mensajes Toast",
+        "text9": "Astro Icon --> Para la optimización de íconos y SVGs",
+        "text10": "Figma --> Para diseños y prototipos"
+      }
+    },
+    "spotlight": {
+      "text1": "El principal foco de atención de esta web está en su performance. Trabajé bastante para lograr aplicar buenas prácticas de accesibilidad y SEO que beneficien al emprendimiento en su posicionamiento y experiencia de usuario.",
+      "text2": "También fue muy importante el trabajo con el cliente para poder plasmar en el sitio la información necesaria para dar a conocer el proyecto. Trabajamos en conjunto para definir el contenido y estructura de la información adecuados."
+    },
+    "lessons": {
+      "text1": "Mi principal aprendizaje fue el desarrollo de habilidades blandas para trabajar con el cliente en el proceso de definición inicial del proyecto.",
+      "text2": "Frente limitantes de tiempo y recursos para el desarrollo del sitio, trabajé en varias opciones que se ajustaran a las capacidades del cliente, tratando de lograr un equilibrio entre sus diversas necesidades.",
+      "text3": "Así llegamos a acuerdos previos al desarrollo que requirieron de mi parte la capacidad para comunicar claramente los pros y contras de cada opción."
+    }
   }
 }

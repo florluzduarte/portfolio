@@ -1,0 +1,9 @@
+---
+interface Props {
+  workType: "Frontend" | "Backend" | "Fullstack" | "Design";
+}
+
+const { workType } = Astro.props;
+---
+
+<p class="py-2 px-6 bg-gray-400 rounded-full">{workType}</p>

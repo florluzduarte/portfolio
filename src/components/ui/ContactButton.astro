@@ -22,7 +22,6 @@ setDefaultNamespace("layout");
     try {
       await navigator.clipboard.writeText(text);
       isToastOpen.set(true);
-      console.log("isOpen");
       setTimeout(() => {
         isToastOpen.set(false);
       }, 1500);

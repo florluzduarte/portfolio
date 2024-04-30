@@ -18,5 +18,15 @@
     "credits-2": " and ",
     "credits-3": " Astro"
   },
-  "emailToast": "Email copied to clipboard"
+  "emailToast": "Email copied to clipboard",
+  "backButton": "Go Back",
+  "deployButton": "Go to live web/app",
+  "repositoryButton": "Go to repository",
+  "caseStudyNavbar": {
+    "text1": "Introduction",
+    "text2": "Team & Role",
+    "text3": "Tech Stack",
+    "text4": "Spotlight",
+    "text5": "Lessons Learned"
+  }
 }
