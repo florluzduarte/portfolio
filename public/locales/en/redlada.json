@@ -39,8 +39,8 @@
     },
     "spotlight": {
       "text1": "Within the challenges of this project, I would like to highlight two things:",
-      "text2": "First, the work done with the client, which took multiple collaborative meetings to optimize the site's information architecture and manage the large amount of information they needed to make visible on this institutional page.",
-      "text3": "The design and frontend work done to provide this organization with a modern site, with its own custom components and without duplicate code, that is easy to maintain and continue scaling."
+      "text2": "First, the work done with the client, which took multiple collaborative meetings to optimize the site's information architecture and manage the large amount of data they needed to make visible on this institutional page.",
+      "text3": "Second, the design and frontend work done to provide this organization with a modern site, with its own custom components and without duplicate code, that is easy to maintain and continue scaling."
     },
     "lessons": {
       "text1": "This project was a formative experience for me, as up to this point, I had not worked on a web/app of this size with multiple screens and information at different levels. The realization took several months of development, combining the work prior to the design process + the code implementation of the site.",

@@ -39,8 +39,8 @@
     },
     "spotlight": {
       "text1": "Dentro de los desafíos de este proyecto me gustaría destacar dos cosas:",
-      "text2": "Primero, el trabajo realizado junto al cliente, que llevó múltiples reuniones colaborativas para poder optimizar la arquitectura de la información del sitio y gestionar la gran cantidad de información de necesitaban visibilizar en esta página institucional.",
-      "text3": "El trabajo realizado de diseño y frontend para brindarle a esta organización un sitio moderno, con sus propios componentes personalizados y sin código duplicado, que sea fácil de mantener y seguir escalando."
+      "text2": "Primero, el trabajo realizado junto al cliente, que llevó múltiples reuniones colaborativas para poder optimizar la arquitectura de la información del sitio y gestionar la gran cantidad de data de necesitaban visibilizar en esta página institucional.",
+      "text3": "Segundo, el trabajo realizado de diseño y frontend para brindarle a esta organización un sitio moderno, con sus propios componentes personalizados y sin código duplicado, que sea fácil de mantener y seguir escalando."
     },
     "lessons": {
       "text1": "Este proyecto fue para mí una experiencia formativa, ya que hasta este punto, no había trabajado en una web / app de estas dimensiones con múltiples pantallas e información en distintos niveles. La realización llevó varios meses de desarrollo, combinando el trabajo previo al proceso de diseño + la implementación en código del sitio.",
