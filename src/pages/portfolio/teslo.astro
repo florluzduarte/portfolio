@@ -1,6 +1,67 @@
 ---
-import { changeLanguage } from "i18next";
+import { t, setDefaultNamespace, changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import CaseStudyLayout from "../../layouts/CaseStudyLayout.astro";
+import CaseStudySection from "../../components/case-studies/CaseStudySection.astro";
+import CaseStudyContainer from "../../components/case-studies/CaseStudyContainer.astro";
+import Subtitle from "../../components/ui/Subtitle.astro";
+import Bullet from "../../components/ui/Bullet.astro";
 
 changeLanguage("es");
+
+setDefaultNamespace("teslo");
+const tesloData = {
+    colorText: "TesloShop",
+    plainText: "E-commerce",
+    altText: "TesloShop Hero Image",
+    imagePath: "/src/assets/cases/hero-teslo.png",
+    repository: "https://github.com/florluzduarte/teslo-shop-next",
+};
+const techBulletsAux = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 ---
 
+<Layout title={t("site.title")} description={t("layout:site.description")}>
+  <CaseStudyLayout workType="Fullstack" {...tesloData}>
+    <CaseStudyContainer>
+      <CaseStudySection sectionId="introduction">
+        <Subtitle title={t("caseStudy:introduction")} />
+        <p>{t("project.description.text1")}</p>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="role">
+        <Subtitle title={t("caseStudy:role")} />
+        <p>
+          <span class="text-pink-400 me-3 ms-4">-</span>{
+            t("project.role.text1")
+          }
+        </p>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="stack">
+        <Subtitle title={t("caseStudy:stack")} />
+        <p>{t("project.stack.description")}</p>
+        <ul class="flex flex-col gap-3 ms-4 mt-3">
+          {
+            techBulletsAux.map((bullet) => (
+              <Bullet order={bullet}>
+                <p>{t(`project.stack.list.text${bullet}`)}</p>
+              </Bullet>
+            ))
+          }
+        </ul>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="spotlight">
+        <Subtitle title={t("caseStudy:spotlight")} />
+        <p>{t("project.spotlight.text1")}</p>
+        <p>{t("project.spotlight.text2")}</p>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="lessons">
+        <Subtitle title={t("caseStudy:lessons")} />
+        <p>{t("project.lessons.text1")}</p>
+        <p>{t("project.lessons.text2")}</p>
+      </CaseStudySection>
+    </CaseStudyContainer>
+  </CaseStudyLayout>
+</Layout>

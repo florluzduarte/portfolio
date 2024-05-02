@@ -1,0 +1,39 @@
+{
+  "site": {
+    "title": "Flor Luz Duarte | TesloShop"
+  },
+  "project": {
+    "description": {
+      "text1": "TesloShop es un clon inspirado en la página de E-commerce de Tesla. Este proyecto fue desarrollado durante la cursada de Next.js de la academia de programación DevTalles y modificado posteriormente para introducir mejoras."
+    },
+    "link": "https://github.com/florluzduarte/teslo-shop-next",
+    "role": {
+      "text1": "Fullstack developer"
+    },
+    "stack": {
+      "description": "Este proyecto fue desarrollado para aprender las últimas funcionalidades de Next.js en sus nuevas versiones utilizando app router y server actions.",
+      "list": {
+        "text1": "Next.js --> Como framework principal",
+        "text2": "TypeScript --> Para lógica y tipado estricto",
+        "text3": "Zustand --> Para el manejo de estado global",
+        "text4": "Tailwind CSS --> Para los estilos de la UI",
+        "text5": "Vercel --> Para realizar el deploy del proyecto",
+        "text6": "react-Icons --> Para íconos optimizados",
+        "text7": "PostgreSQL --> Como base de datos",
+        "text8": "Prisma DB --> Como ORM para manejar queries y schema de la base de datos",
+        "text9": "Docker desktop --> Para generar un entorno local para el uso de la base de datos",
+        "text10": "TablePlus --> Para visualizar la data almacenada en la base de datos",
+        "text11": "Swiper --> Para implementar el carousel de productos",
+        "text12": "PayPal --> Como plataforma de pagos"
+      }
+    },
+    "spotlight": {
+      "text1": "Este desafío me permitió profundizar mis conocimientos sobre Next.js. Además utilicé por primera vez Docker Desktop para generar una imagen donde correr localmente la base de datos y así poder tener un ambiente local para desarrollar la app.",
+      "text2": "Fue un gran desafío técnico ya que pude aplicar todo lo aprendido sobre React en un proyecto complejo, y aprender en el proceso cómo utilizar varias tecnologías del stack como: Zustand y Prisma."
+    },
+    "lessons": {
+      "text1": "Este E-commerce me permitió ponerme a prueba técnicamente, ya que modifiqué parte de la funcionalidad original para lograr una mejor experiencia de usuario.",
+      "text2": "También me permitió integrar una pasarela de pagos en un proyecto por primera vez, y creo que dejó en mi bases sólidas para seguir trabajando en proyectos cada vez más complejos usando Next.js."
+    }
+  }
+}
