@@ -1,0 +1,30 @@
+{
+  "site": {
+    "title": "Flor Luz Duarte | Unicornio Dark Theme"
+  },
+  "project": {
+    "description": {
+      "text1": "Unicornio dark es un tema para Visual Studio Code que desarrollé para compartir con los miembros de mi comunidad gratuita de tecnología (unicornio.dev).",
+      "text2": "Es un tema especialmente adaptado para las tecnologías que más utilizo en mi día a día como: React, Next.js, TypeScript, Astro, Angular, Markdown, MDX, JSON, etc.",
+      "text3": "Es un proyecto que está en evolución gracias al feedback de sus usuarios y que planeo expandir para lograr varias versiones de personalización y su uso en otros IDEs, además de VSCode."
+    },
+    "link": "https://github.com/unicorniodev/unicornio-dark-theme",
+    "role": {
+      "text1": "Theme developer"
+    },
+    "stack": {
+      "description": "Este proyecto fue desarrollado para aprender cómo crear un tema personalizado y cómo funciona el proceso para subir una extensión al Marketplace de Visual Studio.",
+      "list": {
+        "text1": "VSCode --> Para desarrollar y testear",
+        "text2": "VSCode Yeoman extension generator --> Para generar el boilerplate para el tema",
+        "text3": "VSCE publishing tool --> Para hacer el deploy al Marketplace"
+      }
+    },
+    "spotlight": {
+      "text1": "Este proyecto me permitió aprender los detalles necesarios para generar y publicar una extensión para Visual Studio Code. Fue un proceso interesante que me llevó a leer bastante documentación para poder publicar la extensión de forma correcta."
+    },
+    "lessons": {
+      "text1": "Desarrollando este tema me sorprendió la cantidad de variables de color que puede tener un tema y cómo poder optimizar sus usos para destacar elementos de la sintaxis de distintos lenguajes. Fue una muy buena experiencia y planeo seguir ampliando el proyecto con nuevas versiones."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "site": {
+    "title": "Flor Luz Duarte | TesloShop"
+  },
+  "project": {
+    "description": {
+      "text1": "TesloShop is a clone inspired by Tesla's E-commerce page. This project was developed during the Next.js course at the DevTalles programming academy and was later modified to introduce improvements."
+    },
+    "link": "https://github.com/florluzduarte/teslo-shop-next",
+    "role": {
+      "text1": "Fullstack developer"
+    },
+    "stack": {
+      "description": "This project was developed to learn the latest features of Next.js in its new versions using app router and server actions.",
+      "list": {
+        "text1": "Next.js --> React Framework",
+        "text2": "TypeScript --> For logic and type checking",
+        "text3": "Zustand --> To manage a global state",
+        "text4": "Tailwind CSS --> For UI styling",
+        "text5": "Vercel --> To deploy the project",
+        "text6": "react-Icons --> To use optimized icons",
+        "text7": "PostgreSQL --> As database",
+        "text8": "Prisma DB --> As ORM to handle queries and schema for the database",
+        "text9": "Docker desktop --> To generate a local environment for the use of the database",
+        "text10": "TablePlus --> To visualize the DB data",
+        "text11": "Swiper --> To implement the products page carousel",
+        "text12": "PayPal --> As payment platform"
+      }
+    },
+    "spotlight": {
+      "text1": "This challenge allowed me to deepen my knowledge about Next.js. In addition, I used Docker Desktop for the first time to generate an image where I could run the database locally and thus have a local environment to develop the app.",
+      "text2": "It was a great technical challenge as I was able to apply everything I learned about React in a complex project, and learn in the process how to use various technologies from the stack such as: Zustand and Prisma."
+    },
+    "lessons": {
+      "text1": "This E-commerce allowed me to technically test myself, as I modified part of the original functionality to achieve a better user experience.",
+      "text2": "It also allowed me to integrate a payment gateway into a project for the first time, and I believe it laid a solid foundation for me to continue working on increasingly complex projects using Next.js."
+    }
+  }
+}
