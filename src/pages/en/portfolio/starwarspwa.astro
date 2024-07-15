@@ -1,0 +1,71 @@
+---
+import { t, setDefaultNamespace, changeLanguage } from "i18next";
+import Layout from "../../../layouts/Layout.astro";
+import CaseStudyLayout from "../../../layouts/CaseStudyLayout.astro";
+import CaseStudySection from "../../../components/case-studies/CaseStudySection.astro";
+import CaseStudyContainer from "../../../components/case-studies/CaseStudyContainer.astro";
+import Subtitle from "../../../components/ui/Subtitle.astro";
+import Bullet from "../../../components/ui/Bullet.astro";
+
+changeLanguage("en");
+
+setDefaultNamespace("swpwa");
+const swPwaData = {
+    colorText: "Star Wars Heroes",
+    plainText: "Progressive Web App",
+    altText: "Star Wars PWA screenshot",
+    imagePath: "/src/assets/cases/hero-sw-pwa.png",
+    repository: "https://github.com/florluzduarte/test-frontend-star-wars-pwa",
+    deploy: "https://star-wars-pwa.netlify.app/",
+};
+const techBulletsAux = [1, 2, 3, 4, 5, 6, 7];
+---
+
+<Layout title={t("site.title")} description={t("layout:site.description")}>
+  <CaseStudyLayout workType="Frontend" {...swPwaData}>
+    <CaseStudyContainer>
+      <CaseStudySection sectionId="introduction">
+        <Subtitle title={t("caseStudy:introduction")} />
+        <p>{t("project.description.text1")}</p>
+        <p>{t("project.description.text2")}</p>
+        <p>{t("project.description.text3")}</p>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="role">
+        <Subtitle title={t("caseStudy:role")} />
+        <p>
+          <span class="text-pink-400 me-3 ms-4">-</span>{
+            t("project.role.text1")
+          }
+        </p>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="stack">
+        <Subtitle title={t("caseStudy:stack")} />
+        <p>{t("project.stack.description")}</p>
+        <ul class="flex flex-col gap-3 ms-4 mt-3">
+          {
+            techBulletsAux.map((bullet) => (
+              <Bullet order={bullet}>
+                <p>{t(`project.stack.list.text${bullet}`)}</p>
+              </Bullet>
+            ))
+          }
+        </ul>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="spotlight">
+        <Subtitle title={t("caseStudy:spotlight")} />
+        <p>{t("project.spotlight.text1")}</p>
+        <p>{t("project.spotlight.text2")}</p>
+      </CaseStudySection>
+
+      <CaseStudySection sectionId="lessons">
+        <Subtitle title={t("caseStudy:lessons")} />
+        <p>{t("project.lessons.text1")}</p>
+        <p>{t("project.lessons.text2")}</p>
+        <p>{t("project.lessons.text3")}</p>
+      </CaseStudySection>
+    </CaseStudyContainer>
+  </CaseStudyLayout>
+</Layout>
