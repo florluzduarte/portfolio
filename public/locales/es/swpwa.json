@@ -1,0 +1,38 @@
+{
+  "site": {
+    "title": "Flor Luz Duarte | Star Wars PWA"
+  },
+  "project": {
+    "description": {
+      "text1": "Esta web app permite buscar información sobre los personajes de Star Wars.",
+      "text2": "Es una Progressive Web App (PWA) que cuenta con soporte 100% offline. Es decir, todos los usuarios reciben la misma experiencia, aún cuando sus condiciones de conexión a internet son limitadas o nulas.",
+      "text3": "Adicionalmente puede ser instalada en cualquier dispositivo y simula las funcionalidades de una app nativa para los usuarios."
+    },
+    "linkRepo": "https://github.com/florluzduarte/test-frontend-star-wars-pwa",
+    "linkDeploy": "https://star-wars-pwa.netlify.app/",
+    "role": {
+      "text1": "Front-End Developer"
+    },
+    "stack": {
+      "description": "El principal foco de este proyecto estuvo puesto en la implementación de las funcionalidades de PWA y el uso de buenas prácticas de React.",
+      "list": {
+        "text1": "Vite --> Para iniciar el proyecto y generar los builds (Bundling)",
+        "text2": "React + TypeScript --> Como herramientas principales (framework + lenguaje)",
+        "text3": "React-Router-Dom --> Para el routing",
+        "text4": "Emotion + Styled Components --> Para los estilos",
+        "text5": "VitePWA --> Plugin que encapsula las herramientas necesarias para trabajar con PWAs en el entorno de Vite. De fondo utiliza Workbox como principal dependencia para el trabajo con Service Workers.",
+        "text6": "Figma --> Para los diseños de referencia",
+        "text7": "SWAPI API --> Para la obtención de la data de Star Wars"
+      }
+    },
+    "spotlight": {
+      "text1": "Este desafío me permitió explorar funcionalidades de la web que no conocía. Poder transformar una app para que funcione offline, trabajar con Service Workers para interceptar y redirigir las peticiones HTTPS según distintas estrategias y gestionar el almacenamiento de assets en el caché, fueron aprendizajes clave de este desarrollo.",
+      "text2": "Implementar las funcionalidades de Workbox y coordinarlas con el plugin de VitePWA también me dio los conocimientos necesarios para transformar cualquier app de React en una Progressive Web App."
+    },
+    "lessons": {
+      "text1": "Para desarrollar este proyecto tuve que ahondar en la documentación de varias tecnologías que no había utilizado hasta el momento. Sin embargo, en el lapso de 1 semana el proyecto estaba funcionando e implementado como PWA.",
+      "text2": "Para mi fue un gran logro poder trasladar todo lo aprendido sobre Progressive Web Apps a un proyecto concreto en tiempo record. Además de animarme a usar herramientas no tan habituales para solucionar el problema propuesto.",
+      "text3": "Adicionalmente me gustaría destacar dos recursos que me parecieron clave para poder llegar al objetivo: primero, el curso de PWA realizado por Google que se encuentra en web.dev, y segundo, el curso de aplicaciones offline ofrecido por Udacity. Ambos materiales fueron de consulta y apoyo a lo largo de esta prueba técnica, y de más está decir que me dejaron aprendizajes para aplicar a proyectos futuros."
+    }
+  }
+}
