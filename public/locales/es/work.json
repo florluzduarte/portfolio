@@ -3,11 +3,11 @@
     "title": "Experiencia Laboral",
     "raddix": {
       "title": "Frontend Developer Web",
-      "company": "RADDIX.TECH (Freelance)",
+      "company": "Freelance",
       "link": "https://raddix.tech",
       "date": "(Enero 2023 - Actualidad)",
       "experience": {
-        "description": "raddix.tech es un estudio de desarrollo y diseño web orientado a trabajar con clientes y otras empresas de tecnología.",
+        "description": "Como freelancer he colaborado con +10 clientes en la implementación de sus proyectos",
         "stack": "Tech Stack: React, Next.js, Astro.js, PostgreSQL, Tailwind CSS, TypeScript, JavaScript, HTML, CSS vanilla, Git y GitHub.",
         "list": {
           "text1": "Desarrollar los proyectos de web/apps de múltiples clientes.",
